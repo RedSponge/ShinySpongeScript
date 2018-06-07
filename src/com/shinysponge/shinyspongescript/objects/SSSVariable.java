@@ -1,11 +1,11 @@
 package com.shinysponge.shinyspongescript.objects;
 
-public class Variable<T> {
+public class SSSVariable<T> {
 
     private String name;
     private T value;
 
-    public Variable(String name, T value) {
+    public SSSVariable(String name, T value) {
         this.name = name;
         this.value = value;
     }

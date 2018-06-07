@@ -5,7 +5,7 @@ import com.shinysponge.shinyspongescript.LineType;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public interface Line {
+public interface SSSLine {
 
     LineType getType();
 

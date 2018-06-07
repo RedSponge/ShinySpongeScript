@@ -1,6 +1,6 @@
 package com.shinysponge.shinyspongescript;
 
-import com.shinysponge.shinyspongescript.blocks.Block;
+import com.shinysponge.shinyspongescript.blocks.SSSBlock;
 import com.shinysponge.shinyspongescript.blocks.IfBlock;
 
 import java.util.Arrays;
@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Compiler {
 
-    private static List<Block> blocks = Arrays.asList(new IfBlock());
+    private static List<SSSBlock> blocks = Arrays.asList(new IfBlock());
 
     private static CompiledLine lastLine;
 
@@ -22,6 +22,8 @@ public class Compiler {
     }
 
     private static void processLine(int i, String line) {
+        line = line.trim();
+
 
 
 

@@ -2,7 +2,7 @@ package com.shinysponge.shinyspongescript.linetypes;
 
 import com.shinysponge.shinyspongescript.LineType;
 
-public class MethodTitle implements Line {
+public class MethodTitle implements SSSLine {
 
 
     @Override
@@ -12,6 +12,6 @@ public class MethodTitle implements Line {
 
     @Override
     public boolean couldBeThis(String line) {
-        return Line.regexMatch(line,"^\\s*\\w+\\s*\\(.*\\)\\s*$");
+        return SSSLine.regexMatch(line,"^\\s*\\w+\\s*\\(.*\\)\\s*$");
     }
 }

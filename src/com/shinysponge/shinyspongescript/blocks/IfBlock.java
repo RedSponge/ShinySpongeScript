@@ -2,9 +2,9 @@ package com.shinysponge.shinyspongescript.blocks;
 
 import com.shinysponge.shinyspongescript.CompiledLine;
 import com.shinysponge.shinyspongescript.LineType;
-import com.shinysponge.shinyspongescript.linetypes.Line;
+import com.shinysponge.shinyspongescript.linetypes.SSSLine;
 
-public class IfBlock extends Block implements Line {
+public class IfBlock extends SSSBlock implements SSSLine {
 
     @Override
     public String getKey() {
@@ -17,7 +17,7 @@ public class IfBlock extends Block implements Line {
     }
 
     @Override
-    public Block mustBeBefore() {
+    public SSSBlock mustBeBefore() {
         return null;
     }
 

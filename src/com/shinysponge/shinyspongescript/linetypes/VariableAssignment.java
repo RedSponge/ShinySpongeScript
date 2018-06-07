@@ -2,7 +2,7 @@ package com.shinysponge.shinyspongescript.linetypes;
 
 import com.shinysponge.shinyspongescript.LineType;
 
-public class VariableAssignment implements Line {
+public class VariableAssignment implements SSSLine {
 
     @Override
     public LineType getType() {
@@ -11,6 +11,6 @@ public class VariableAssignment implements Line {
 
     @Override
     public boolean couldBeThis(String line) {
-        return Line.regexMatch(line,"^.+\\s*=\\s*.+$");
+        return SSSLine.regexMatch(line,"^.+\\s*=\\s*.+$");
     }
 }
